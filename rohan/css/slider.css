@@ -1,0 +1,247 @@
+/*NIVO SLIDER*/
+.nivoSlider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+}
+.nivoSlider img {
+  max-width: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.nivoSlider a {
+  border: 0;
+  display: block;
+}
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none;
+  background: #fff;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+}
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  top: 0;
+}
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+}
+.nivo-box img {
+  display: block;
+}
+.nivo-caption {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: #000;
+  color: #fff;
+  z-index: 8;
+  padding: 5px 10px;
+  overflow: hidden;
+  display: none;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  max-width: 40%;
+}
+.nivo-caption p {
+  padding: 5px;
+  margin: 0;
+}
+.nivo-caption a {
+  display: inline !important;
+}
+.nivo-html-caption {
+  display: none;
+}
+.nivo-directionNav a {
+  position: absolute;
+  top: 50%;
+  z-index: 9;
+  cursor: pointer;
+  margin-top: -15px;
+}
+.nivo-prevNav {
+  left: -30px;
+}
+.nivo-nextNav {
+  right: -30px;
+}
+.nivo-controlNav {
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  margin-bottom: -20px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+.nivo-controlNav a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border: 0;
+  margin: 0 5px;
+}
+.nivo-controlNav a:before {
+  position: absolute;
+  content: '';
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.nivo-controlNav a.acitve {
+  font-weight: bold;
+}
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+.slider-wrapper .nivo-directionNav a {
+  text-decoration: none;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.slider-wrapper .nivo-directionNav a:before {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  background-color: #7e4113;
+  text-align: center;
+  display: block;
+  line-height: 30px;
+  color: #fff;
+  font-family: 'FontAwesome';
+  content: '\f053';
+}
+.slider-wrapper .nivo-directionNav a:hover:before {
+  background-color: #000;
+}
+.slider-wrapper .nivo-directionNav a.nivo-nextNav:before {
+  content: '\f054';
+}
+.slider-wrapper:hover .nivo-directionNav a {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.slider-wrapper:hover .nivo-nextNav {
+  right: 20px;
+}
+.slider-wrapper:hover .nivo-prevNav {
+  left: 20px;
+}
+.slider-wrapper:hover .nivo-controlNav {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  margin-bottom: 0;
+}
+.slider-wrapper .nivo-controlNav a.active {
+  cursor: default;
+}
+.slider-wrapper .nivo-controlNav a.active:before {
+  background: #7e4113;
+}
+.slider-wrapper .nivo-controlNav .nivo-thumbs-enabled {
+  width: 100%;
+}
+.slider-wrapper .nivo-controlNav .nivo-thumbs-enabled a {
+  width: auto;
+  height: auto;
+  background: auto;
+  margin-bottom: 5px;
+}
+.slider-wrapper .nivo-controlNav .nivo-thumbs-enabled img {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+.nivo-directionNav .nivo-caption a {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+.nivo-directionNav .nivo-caption a:hover {
+  color: #fff;
+}
+@media all and (max-width: 800px) {
+.nivo-caption {
+  display: none !important;
+}
+.nivo-controlNav {
+  display: none;
+}
+.nivo-directionNav a {
+  opacity: 1 !important;
+  -ms-filter: none;
+  filter: none;
+}
+.nivo-directionNav .nivo-nextNav {
+  right: 20px;
+}
+.nivo-directionNav .nivo-prevNav {
+  left: 20px;
+}
+}
+/*END NIVO SLIDER*/
